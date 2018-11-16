@@ -1,0 +1,79 @@
+
+  pet    "carpet stuff"   "plant the petunia"  "A pet boa"
+
+  p.t    "keep to the right"   "potato pie"  "creep,toenail"
+
+  p[aeiou]t
+  p[^aeiou]t
+
+  p[a-z]t
+
+  p[a-zA-Z0-9_]t
+
+  [a-e56mw-z-]
+
+  p[0-9]t
+
+  p[0-9A-Fa-f]t
+
+  [0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]
+
+  foo[abc\-def]
+
+  \d\d\d-\d\d-\d\d\d\d
+
+  \d [0-9]            \D [^0-9]
+  \w [a-zA-Z0-9_]     \W [^a-zA-Z0-9_]     \w\W  \W\w
+  \s [ \t\n\r\b\f]    \S [^ \t\n\r\b\f]
+
+  ^foo    "food service"  "football" NOT  "chicken foot"
+
+   bar$   "crowbar"   "dive bar"  NOT "bar none"
+
+  \bfoo    "food service"  "football"  "chicken foot"
+              "x:food:y"
+
+  foo\b
+
+  ^foo$    "foo"
+
+  ^foo.*bar$ "foobar"  "foo bar"  "foowombatbar"
+
+   REPEAT COUNTS (AKA quantifiers)
+  *  +   ?
+  {x} {x,} {x,y}
+  *? +?   # shortest match (non-greedy)
+
+  pa*t    pt  pat paaaaaaaaaaaaaaaaaaaaat
+
+  pa+t       pat paaaaaaaaaaaaaaaaaaaaat
+
+  p[aeiou]*t  pet poet piiiiiiiiiiiit  pt
+
+  p[aeiou]{2}t  p[aeiou]{2,}t  p[aeiou]{1,2}t
+
+
+  \b\d{3}-\d{2}-\d{4}\b
+      foo 923-21-2093 bar
+      foo 923-21-2093 bar
+
+  2903923-21-20932093
+
+
+  html = "<div>thing1</div><div>thing2</div><div>thing3</div>"
+
+  pattern1 = "<div>.*</div>"
+
+  pattern2 = "<div>.*?</div>"
+
+
+     [Pp][aeiou]t
+
+
+
+
+
+
+
+
+
