@@ -12,6 +12,8 @@ a = np.array(
 print(a)
 print()
 
+print("using git!")
+
 print('a[0] =>', a[0])  # <2>
 print('a[0][0] =>', a[0][0])  # <3>
 print('a[0,0] =>', a[0, 0])  # <4>
